@@ -1,0 +1,101 @@
+.paquete{
+    display: flex;
+    flex-flow: row wrap;
+.content{
+    margin: 20px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 0.4vw;
+    background-color: #29333B;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    .imagen{
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 75%;
+        border-radius: 0.4vw 0.4vw 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 135%;
+        .material-icons{
+            position: relative;
+            filter: none !important;
+            color: white;
+            font-size: 5vw;
+            opacity: 0.9;
+            user-select: none;
+            border-radius: 50%;
+        }
+    }
+
+    .imagen:hover:not(.material-icons){
+        filter: blur(2px);
+    }
+    
+    
+    .info{
+        width: 100%;
+        height: 25%;
+        border-radius: 0 0 0.4vw 0.4vw;
+        display: flex;
+        .box-info{
+            width: 75%;
+            padding: 0.2vw;
+            color: #DFE2E6;
+            padding: 0.2vw 0 0 0.4vw;
+            .name-song{
+                height: 50%;
+                max-width: 100%;
+                font-size: 1vw;
+                display: inline-block;
+                overflow-x: hidden;
+                white-space: nowrap;
+            }
+            .name-artist{
+                height: 40%;
+                max-width: 100%;
+                position: relative;
+                top: -0.3vw;
+                font-size: 0.7vw;
+                overflow-x: hidden;
+                white-space: nowrap;
+            }
+        }
+        .box-btn{
+            display: flex;
+            position: relative;
+            width: 25%;
+            align-items: center;
+            justify-content: center;
+            .material-icons{ 
+                border-radius: 0.3vw;
+                text-decoration: none;
+                color: #E4E6E9;
+                font-size: 1.5vw;            
+                align-items: center;
+                user-select: none;
+            }
+            .material-icons:hover{ 
+                background-color: #29333B;
+            }
+        }
+    }
+
+
+}
+}
+.paquete{
+    .content:hover{
+        background-color: #262D34;
+        box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+        
+    }
+}
+
+.hiden{
+    display: none !important;
+}

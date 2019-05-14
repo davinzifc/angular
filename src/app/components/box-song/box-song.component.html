@@ -1,0 +1,36 @@
+<input type="text" placeholder="jaime es bien pendejo" (keyup)="updateData($event)">
+<button (click)="search(buscar)">buscar</button>
+<div class = "paquete" >
+
+  <div class="content" *ngFor="let musica of result">
+
+    <div class="imagen"[ngStyle]="{'background-image':'url(' + musica.album.cover_medium + ')'}"
+      (mouseleave) = "onLeave($event)" (mouseover) = "onOver($event)">
+
+        <span class="material-icons hiden"  (click)="onClick($event)" >
+          play_circle_outline
+        </span>
+
+    </div>
+
+    <div class="info">
+
+      <div class="box-info">
+
+        <div class="name-song">{{musica.title}}</div>
+        <div class="name-artist">{{musica.artist.name}}</div>
+
+      </div>
+
+      <div class="box-btn">
+
+        <a href="{{musica.link}}" target="_blank" class="material-icons">more_vert</a>
+
+      </div>
+
+    </div>
+    
+
+  </div>
+ 
+</div>

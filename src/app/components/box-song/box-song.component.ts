@@ -39,22 +39,22 @@ export class BoxSongComponent implements OnInit {
     });
   }
 
-  onOver(evento){
-    try {
-      evento["target"].firstChild.classList.remove('hiden');
-    }catch(error) {
-      
-    }
-   
+  onHover(e){
+    let item = e.target.parentNode;
+    item.querySelector(".material-icons").classList.remove("hiden");
+    item.querySelector(".imagen").style.filter = "blur(2px)";
+  }
+  
+  onLeave(e){
+    let item = e.target.parentNode;
+    item.querySelector(".material-icons").classList.add("hiden");
+    item.querySelector(".imagen").style.filter = "blur(0px)";
   }
 
-  onLeave(evento){
-    evento["target"].firstChild.classList.add('hiden');
-  }
-
-  onClick(evento){
-    this.active = (this.active == true)?false:true;
-    evento["target"].innerHTML = (evento["target"].innerHTML == 'pause_circle_outline')?'play_circle_outline':'pause_circle_outline';
+  onClick(e){
+    let item = e.target.parentNode;
+    let playIcon = item.querySelector(".material-icons");
+    playIcon.innerHTML = (playIcon.innerHTML == 'pause_circle_outline')?'play_circle_outline':'pause_circle_outline';
   }
 
 }

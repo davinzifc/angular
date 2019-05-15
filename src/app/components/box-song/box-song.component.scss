@@ -10,31 +10,43 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    .imagen{
-        transition: all 0.3s ease;
+    .item{
         width: 100%;
         height: 75%;
-        border-radius: 0.4vw 0.4vw 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100% 135%;
+        position: relative;
+        .trucazo{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 99;
+        }
         .material-icons{
-            position: relative;
+            position: absolute;
             filter: none !important;
             color: white;
             font-size: 5vw;
             opacity: 0.9;
             user-select: none;
             border-radius: 50%;
+            top: 25%;
+            left: 25%;
         }
-    }
+        .imagen{
+            transition: all 0.3s ease;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.4vw 0.4vw 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 135%;
+            
+        }
 
-    .imagen:hover:not(.material-icons){
-        filter: blur(2px);
     }
+    
     
     
     .info{

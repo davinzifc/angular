@@ -4,14 +4,14 @@
 
   <div class="content" *ngFor="let musica of result">
 
-    <div class="imagen"[ngStyle]="{'background-image':'url(' + musica.album.cover_medium + ')'}"
-      (mouseleave) = "onLeave($event)" (mouseover) = "onOver($event)">
-
-        <span class="material-icons hiden"  (click)="onClick($event)" >
-          play_circle_outline
-        </span>
-
+    <div class="item">
+      <div class="trucazo" (mouseover)="onHover($event)" (click)="onClick($event)" (mouseleave)="onLeave($event)"></div>
+      <div class="imagen" [ngStyle]="{'background-image':'url(' + musica.album.cover_medium + ')'}"></div>
+      <span class="material-icons hiden" >
+        play_circle_outline
+      </span>
     </div>
+    
 
     <div class="info">
 

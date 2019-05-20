@@ -1,0 +1,28 @@
+.boxTime{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: red;
+    .info{
+        flex: 0.2;
+        background-color: yellow;
+    }
+
+    .timeLine{
+        flex: 0.6;
+        background-color: blue;
+        .line{
+            .current{
+                
+            }
+        }
+    }
+
+    .config{
+        flex: 0.2;
+        background-color: green;
+
+    }
+}

@@ -1,7 +1,7 @@
 <div class="search"> 
-  <input type="text" placeholder="jaime es bien pendejo" (keyup)="updateData($event)"> 
-  <div class="button">
-    <span class="material-icons" (click)="search(buscar)">search</span>
+  <input type="text" placeholder="jaime es bien pendejo" (keyup)="onKey($event)" (keyup)="updateData($event)"> 
+  <div class="button" (click)="search(buscar)">
+    <span class="material-icons">search</span>
   </div>
   <!--button (click)="search(buscar)">buscar</button>-->
 </div>

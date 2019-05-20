@@ -1,6 +1,7 @@
 .paquete{
     display: flex;
     flex-flow: row wrap;
+    overflow: hidden;
 .content{
     margin: 20px;
     width: 10vw;
@@ -114,6 +115,7 @@
 }
 
 .search{
+    margin: 20px;
     position: relative;
     display: flex;
     background-color: #fff;
@@ -124,6 +126,7 @@
     overflow: hidden;
     input{
         padding-left: 15px;
+        padding-right: 10px;
         border: none;
         outline: 0 none;
         flex: 0.9;
@@ -139,5 +142,8 @@
         .material-icons{
             user-select: none;
         }
+    }
+    .button:hover{
+        background-color: #EFF2F8;
     }
 }

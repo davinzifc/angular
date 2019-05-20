@@ -76,11 +76,18 @@ export class BoxSongComponent implements OnInit {
       
     }else if(this.listen[0] != song){
         this.listen[0].pause();
+        this.listen[0].currentTime = 0;
         this.listen[1].innerHTML = 'play_circle_outline';
         this.listen[0] = song;
         this.listen[1] = icon;
       }
 
+  }
+
+  onKey(e){
+    if(e['keyCode'] == 13){
+      this.search();
+    }
   }
 
 }

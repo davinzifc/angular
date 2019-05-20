@@ -74,6 +74,7 @@
                 top: -0.3vw;
                 font-size: 0.7vw;
                 overflow-x: hidden;
+                overflow-y: hidden;
                 white-space: nowrap;
             }
         }
@@ -110,4 +111,33 @@
 
 .hiden{
     display: none !important;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    width: 25vw;
+    min-width: 535px;
+    height: 4vh;
+    border-radius: 3vw;
+    overflow: hidden;
+    input{
+        padding-left: 15px;
+        border: none;
+        outline: 0 none;
+        flex: 0.9;
+        font-size: 1vw; 
+    }
+    .button{
+        flex: 0.1;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .material-icons{
+            user-select: none;
+        }
+    }
 }

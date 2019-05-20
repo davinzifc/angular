@@ -10,6 +10,7 @@ export class BoxSongComponent implements OnInit {
   active:boolean = false;
   result: any = [];
   buscar:string = "";
+  listen:any = [null,null];
 
 
   constructor(private musicService: MusicService) { 
@@ -54,7 +55,32 @@ export class BoxSongComponent implements OnInit {
   onClick(e){
     let item = e.target.parentNode;
     let playIcon = item.querySelector(".material-icons");
-    playIcon.innerHTML = (playIcon.innerHTML == 'pause_circle_outline')?'play_circle_outline':'pause_circle_outline';
+    let song = item.parentNode.querySelector(".info").querySelector(".box-info").children[2];
+    if(song.paused){
+      song.play();
+      playIcon.innerHTML = 'pause_circle_outline';
+    }else{
+      song.pause();
+      playIcon.innerHTML = 'play_circle_outline';
+    }
+    song.onended = function(){
+      playIcon.innerHTML = 'play_circle_outline';
+    }
+    this.nowSong(song, playIcon);
+  }
+
+  nowSong(song, icon){
+    if(this.listen[0] == null){
+      this.listen[0] = song;
+      this.listen[1] = icon;
+      
+    }else if(this.listen[0] != song){
+        this.listen[0].pause();
+        this.listen[1].innerHTML = 'play_circle_outline';
+        this.listen[0] = song;
+        this.listen[1] = icon;
+      }
+
   }
 
 }

@@ -3,7 +3,6 @@ export var API_HOST = "deezerdevs-deezer.p.rapidapi.com";
 
 import { MusicService } from  './music.service';
 import { HttpHeaders } from '@angular/common/http';
-import { from } from 'rxjs';
 
 export {
     MusicService

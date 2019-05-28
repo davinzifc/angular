@@ -43,7 +43,7 @@ export class BoxSongComponent implements OnInit {
   onHover(e){
     let item = e.target.parentNode;
     item.querySelector(".material-icons").classList.remove("hiden");
-    item.querySelector(".imagen").style.filter = "blur(2px)";
+    item.querySelector(".imagen").style.filter = "blur(1.5px)";
   }
   
   onLeave(e){
@@ -56,17 +56,11 @@ export class BoxSongComponent implements OnInit {
     let item = e.target.parentNode;
     let playIcon = item.querySelector(".material-icons");
     let song = item.parentNode.querySelector(".info").querySelector(".box-info").children[2];
-    if(song.paused){
-      song.play();
-      playIcon.innerHTML = 'pause_circle_outline';
-    }else{
-      song.pause();
-      playIcon.innerHTML = 'play_circle_outline';
-    }
-    song.onended = function(){
-      playIcon.innerHTML = 'play_circle_outline';
-    }
+    this.musicService.musicNow = e.target.parentNode.parentNode;
+    this.musicService.playNow();
     this.nowSong(song, playIcon);
+    song.ontimeupdate = () => {this.musicService.currentLine();
+                               this.musicService.timer(song);};
   }
 
   nowSong(song, icon){

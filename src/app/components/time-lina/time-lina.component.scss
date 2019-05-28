@@ -1,28 +1,87 @@
 .boxTime{
-    position: fixed;
     display: flex;
-    bottom: 0;
     width: 100vw;
-    height: 8.5vh;
-    background-color: red;
+    height: 100%;
     .info{
         flex: 0.2;
-        background-color: yellow;
+        //background-color: yellow;
     }
 
     .timeLine{
         flex: 0.6;
-        background-color: blue;
-        .line{
-            .current{
-                
+        height: 100%;
+        .infoLine{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 60%;
+            justify-content:center;
+            align-items: center;
+            color: #f7f1e3;
+            .material-icons{
+                margin: 0 10px 0 10px;
+                font-size: 160%;
+                user-select: none;
+            }
+
+            .material-icons.repeat{
+                font-size: 135%;
+            }
+
+            .material-icons.shuffle{
+                font-size: 135%;
+            }
+
+            .material-icons.play{
+                font-size: 250%;
+
+            }
+
+            .material-icons:hover{
+                color: #FFF;
+                cursor: pointer;
+            }
+            
+            
+        }
+
+        .boxLine{
+            display: flex;
+            width: 100%;
+            height: 40%;
+            justify-content: center;
+            .line{
+                width: 45%;
+                height: 16%;
+                background-color: #84817a;
+                border-radius: 5px;
+                position: relative;
+                top: 5px;
+                overflow: hidden;
+                .current{
+                    transition: width 0.2s ease;
+                    width: 0%;
+                    height: 100%;
+                    background-color: #f7f1e3;
+                    border-radius: 5px;
+
+                }
+            }
+
+            .line:hover > .current{
+                background-color: #b33939;
+            }
+            span{
+                color: #FFF;
+                margin: 0 1.5% 0 1.5%;
+                font-size: 80%
             }
         }
     }
 
     .config{
         flex: 0.2;
-        background-color: green;
+        //background-color: blue;
 
     }
 }

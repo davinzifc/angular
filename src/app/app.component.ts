@@ -14,8 +14,4 @@ export class AppComponent {
 
   }
 
-  updateName(e){
-   this.musicService.music.title = e.target.value;
-  }
-
 }

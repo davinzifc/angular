@@ -1,4 +1,26 @@
+header{
+    background-color: #3D3D74;
+    height: 4vh;
+    
+}
+
 #content{
     position: relative;
     display: flex;
+    height: 87vh;
+    .menu{
+        background-color: #2c2c54;
+        flex: 0.1;
+    }
+    .music{
+        background-color: #474787;
+        flex: 0.9;
+    }
+}
+
+.timeLine{
+    background-color: #3D3D74;
+    width: 100vw;
+    height: 9vh;
+
 }

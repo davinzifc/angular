@@ -1,4 +1,4 @@
-<div *ngIf="loginService.activeInv" >
+<div *ngIf="this.loginService.activeInv" >
    <header></header>
    <div id="content">
       <div class="menu">
@@ -13,5 +13,5 @@
    </div>
 </div>
 
-<app-login *ngIf="loginService.activeInv == false"></app-login>
+<app-login *ngIf="this.loginService.activeInv == false"></app-login>
 

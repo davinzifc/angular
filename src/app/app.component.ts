@@ -10,7 +10,7 @@ import { LoginService } from 'src/app/services/login.service';
 export class AppComponent {
   title = 'reproductor';
 
-  constructor(private loginService: LoginService){
+  constructor(public loginService: LoginService){
 
   }
 

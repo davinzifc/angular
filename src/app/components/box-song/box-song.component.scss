@@ -9,7 +9,7 @@
     width: 9vw;
     height: 9vw;
     border-radius: 0.4vw;
-    background-color: #2c2c54;
+    background-color: #171717;
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -26,7 +26,7 @@
         .material-icons{
             position: absolute;
             filter: none !important;
-            color: white;
+            color: #ffcf00;
             font-size: 5vw;
             opacity: 0.9;
             user-select: none;
@@ -91,13 +91,13 @@
             .material-icons{ 
                 border-radius: 0.3vw;
                 text-decoration: none;
-                color: #f7f1e3;
+                color: #ffcf00;
                 font-size: 1.5vw;            
                 align-items: center;
                 user-select: none;
             }
             .material-icons:hover{ 
-                background-color: #6A69C6;
+                background-color: #474745;
             }
         }
     }
@@ -107,7 +107,7 @@
 }
 .paquete{
     .content:hover{
-        background-color: #706fd3;
+        background-color: #5c5c5a;
         box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
         
     }

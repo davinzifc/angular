@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MusicService } from './services/music.service';
-import { from } from 'rxjs';
+import { LoginService } from 'src/app/services/login.service';
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { from } from 'rxjs';
 export class AppComponent {
   title = 'reproductor';
 
-  constructor(private musicService: MusicService){
+  constructor(private loginService: LoginService){
 
   }
 

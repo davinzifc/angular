@@ -1,14 +1,17 @@
-<header></header>
-<div id="content">
-   <div class="menu">
-
+<div *ngIf="loginService.activeInv" >
+   <header></header>
+   <div id="content">
+      <div class="menu">
+            <app-menu></app-menu>
+      </div>
+      <div class="music">
+         <app-box-song></app-box-song>
+      </div>
    </div>
-   <div class="music">
-      <app-box-song></app-box-song>
+   <div class="timeLine">
+      <app-time-lina></app-time-lina>   
    </div>
 </div>
-<div class="timeLine">
-   <app-time-lina></app-time-lina>   
-</div>
 
+<app-login *ngIf="loginService.activeInv == false"></app-login>
 

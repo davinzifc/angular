@@ -18,6 +18,7 @@ export class BoxSongComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(sessionStorage.getItem('User'))
   }
  
 

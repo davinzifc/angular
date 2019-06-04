@@ -1,0 +1,27 @@
+<div id="contenido">
+  <div id="content">
+    <h1>Login</h1>
+    <div class="user">
+      <i class="material-icons">account_circle</i>
+      <input type="text" placeholder="User pendejo">
+    </div>
+    <div class="pass">
+      <i class="material-icons">lock</i>
+      <input type="password" placeholder="Pass pendejo">
+    </div>
+    <div class="btn" (click) = "loginBtn()">Sing in</div>
+    <div class="invitado" (click) = "inv = true">invited</div>
+  </div>
+  <div class="invitadoDiv" *ngIf="inv">
+      <div id="content2">
+        <h1>Invited</h1>
+          <div class="user">
+            <i class="material-icons">account_circle</i>
+            <input type="text" placeholder="User pendejo">
+          </div>
+          <div class="btnInv">
+            <div class="btn" (click) = "invitBtn()">Sing in</div>
+          </div>
+        </div>
+  </div>
+</div>

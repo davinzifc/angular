@@ -1,23 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="contenido">
   <div id="content">
     <h1>Login</h1>
     <div class="user">
       <i class="material-icons">account_circle</i>
-      <input type="text" placeholder="User pendejo">
+      <input type="text" placeholder="Username">
     </div>
     <div class="pass">
       <i class="material-icons">lock</i>
-      <input type="password" placeholder="Pass pendejo">
+      <input type="password" placeholder="Password">
     </div>
     <div class="btn" (click) = "loginBtn()">Sing in</div>
-    <div class="invitado" (click) = "inv = true">invited</div>
+    <div class="invitado" (click) = "inv = true">Guest</div>
   </div>
   <div class="invitadoDiv" *ngIf="inv">
       <div id="content2">
-        <h1>Invited</h1>
+        <h1>Guest</h1>
           <div class="user">
             <i class="material-icons">account_circle</i>
-            <input type="text" placeholder="User pendejo">
+            <input type="text" placeholder="Guest username">
           </div>
           <div class="btnInv">
             <div class="btn" (click) = "invitBtn()">Sing in</div>

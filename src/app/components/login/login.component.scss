@@ -170,3 +170,162 @@ input:focus{
     border-bottom: 3px #ffcf00 solid;
 
 }
+
+
+@media screen and (max-width: 1500px) {
+    #contenido{
+        #content{
+            width: 30vw;
+            height: 50vh;
+            }
+            .btn{
+                width: 100px;
+                height: 40px;
+                font-size: 120%;
+        
+            }
+            .invitado{
+                width: 80px;
+                height: 35px;
+            }
+        }
+        .invitadoDiv{
+            width: 40vw;
+            height: 50vh;
+            .btnInv{
+                .btn{
+                    width: 90px;
+                    height: 40px;
+                    
+                }
+            }   
+        }
+    }
+  
+
+
+  @media screen and (max-width: 1250px) {
+    #contenido{
+        
+        #content{
+            
+            width: 40vw;
+            height: 45vh;
+            
+            .btn{
+                width: 100px;
+                height: 40px;
+                font-size: 130%;
+        
+            }
+            .invitado{
+                width: 80px;
+                height: 35px;
+            }
+        }
+        .invitadoDiv{
+            width: 50vw;
+            height: 50vh;
+            .btnInv{
+                .btn{
+                    width: 90px;
+                    height: 40px; 
+                }
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #contenido{
+        
+        #content{
+            width: 45vw;
+            height: 45vh;
+            }
+            .btn{                
+                width: 100px;
+                height: 50px;                
+                font-size: 130%;
+            }    
+            .invitado{               
+                width: 80px;
+                height: 35px;               
+            }
+        }
+        .invitadoDiv{      
+            width: 85vw;
+            height: 60vh;      
+            .btnInv{
+                .btn{          
+                    width: 90px;
+                    height: 40px;    
+                }
+            
+            }
+        }
+    }
+  
+
+  @media screen and (max-width: 750px) {
+    #contenido{
+        
+        #content{
+            width: 65vw;
+            height: 60vh;
+            
+            .btn{
+                width: 100px;
+                height: 50px; 
+                font-size: 130%;
+            }
+            .invitado{
+                width: 80px;
+                height: 35px;
+            }
+        }
+        .invitadoDiv{
+            width: 85vw;
+            height: 60vh;
+            
+            .btnInv{
+                .btn{
+                    width: 90px;
+                    height: 40px;
+                }
+            }
+    
+        }
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    #contenido{
+        
+        #content{
+            width: 95vw;
+            height: 96vh;
+            .btn{
+                width: 100px;
+                height: 40px;
+                font-size: 130%;
+            }
+            .invitado{
+                width: 80px;
+                height: 35px; 
+            }
+        }
+        .invitadoDiv{
+            width: 95vw;
+            height: 96vh;
+            
+            .btnInv{
+                .btn{
+                    width: 90px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+  }

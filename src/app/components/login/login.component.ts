@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   invitBtn(){
     let input = document.querySelector('.invitadoDiv #content2 .user input')['value'];
-    if(input.length > 3){
+    if(input.length >=1){
       sessionStorage.setItem('User', input);
       this.loginService.activeInv = true;
       alert('Bienvenido');
